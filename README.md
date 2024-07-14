@@ -313,6 +313,10 @@ socket=/var/run/mysqld/mysqld.sock
 
 default-storage-engine = InnoDB
 
+# Важность скорости IO над сохранностью данных
+
+innodb_flush_log_at_trx_commit = 0
+
 # Компрессия таблиц для экономии места на диске
 
 innodb_file_format = Barracuda
